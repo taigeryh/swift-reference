@@ -1,16 +1,57 @@
 PODS:
   - Alamofire (4.7.2)
+  - Bugly (2.5.0)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Swift (3.4.2):
+    - CocoaLumberjack/Default
+  - Kingfisher (4.8.0)
+  - ObjectMapper (3.2.0)
+  - RxBlocking (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - RxTest (4.2.0):
+    - RxSwift (~> 4.0)
+  - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Bugly
+  - CocoaLumberjack/Swift
+  - Kingfisher (~> 4.0)
+  - ObjectMapper (~> 3.2.0)
+  - RxBlocking (~> 4.0)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - RxTest (~> 4.0)
+  - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Bugly
+    - CocoaLumberjack
+    - Kingfisher
+    - ObjectMapper
+    - RxBlocking
+    - RxCocoa
+    - RxSwift
+    - RxTest
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  ObjectMapper: 5cccd2de6f253eda859df8116a5a554d9769e859
+  RxBlocking: e339d8a6e752e25ade95ff858466c55436668f59
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  RxTest: 8da864c0ee47534f586ff18fb0c7e5b2f1fe5023
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 949c550a95895cff771c6e2ab87cbb0e081a7d33
+PODFILE CHECKSUM: 13ca04aecb5fa36f3b758fd677e791cbf61a3273
 
 COCOAPODS: 1.5.3

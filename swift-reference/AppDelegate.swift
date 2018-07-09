@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        Logger.config()
+        Log("哈哈😆")
+        LogError("这是一个错误")
+        LogInfo("这是info")
+        LogWarn("这警告")
+        LogDebug("调试")
+
+        
+        
         return true
     }
 

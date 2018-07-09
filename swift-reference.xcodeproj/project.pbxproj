@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0BA953162BBCF2EDC2949553 /* Pods_swift_reference.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FBE1DEF36D306781E355D5 /* Pods_swift_reference.framework */; };
+		4F00C02720EF64E20039B187 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00C02620EF64E20039B187 /* Logger.swift */; };
+		4F8F61FF20EB811B009ED344 /* RequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F61FE20EB811B009ED344 /* RequestTest.swift */; };
 		4FDE6C0720EA05A70098EA55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE6C0620EA05A70098EA55 /* AppDelegate.swift */; };
 		4FDE6C0920EA05A70098EA55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE6C0820EA05A70098EA55 /* ViewController.swift */; };
 		4FDE6C0C20EA05A70098EA55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDE6C0A20EA05A70098EA55 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		0561D1D2B71D65FDB1AEECBC /* Pods_swift_referenceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_referenceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E494591931AFA9BD2CB9250 /* Pods-swift-referenceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-referenceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-referenceUITests/Pods-swift-referenceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F00C02620EF64E20039B187 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		4F8F61FE20EB811B009ED344 /* RequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
 		4FDE6C0320EA05A70098EA55 /* swift-reference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-reference.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDE6C0620EA05A70098EA55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDE6C0820EA05A70098EA55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,9 +93,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F00C02420EF64C90039B187 /* References */ = {
+			isa = PBXGroup;
+			children = (
+				4F00C02520EF64C90039B187 /* Logger */,
+			);
+			path = References;
+			sourceTree = "<group>";
+		};
+		4F00C02520EF64C90039B187 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				4F00C02620EF64E20039B187 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 		4FDE6BFA20EA05A70098EA55 = {
 			isa = PBXGroup;
 			children = (
+				4F00C02420EF64C90039B187 /* References */,
 				4FDE6C0520EA05A70098EA55 /* swift-reference */,
 				4FDE6C1A20EA05AD0098EA55 /* swift-referenceTests */,
 				4FDE6C2520EA05AD0098EA55 /* swift-referenceUITests */,
@@ -116,6 +137,7 @@
 			children = (
 				4FDE6C0620EA05A70098EA55 /* AppDelegate.swift */,
 				4FDE6C0820EA05A70098EA55 /* ViewController.swift */,
+				4F8F61FE20EB811B009ED344 /* RequestTest.swift */,
 				4FDE6C0A20EA05A70098EA55 /* Main.storyboard */,
 				4FDE6C0D20EA05AD0098EA55 /* Assets.xcassets */,
 				4FDE6C0F20EA05AD0098EA55 /* LaunchScreen.storyboard */,
@@ -195,6 +217,7 @@
 				4FDE6C1320EA05AD0098EA55 /* Sources */,
 				4FDE6C1420EA05AD0098EA55 /* Frameworks */,
 				4FDE6C1520EA05AD0098EA55 /* Resources */,
+				BCCA644C5CEB2FA1E3427A66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,14 +381,48 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-swift-reference/Pods-swift-reference-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-reference/Pods-swift-reference-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCCA644C5CEB2FA1E3427A66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swift-referenceTests/Pods-swift-referenceTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-referenceTests/Pods-swift-referenceTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -375,8 +432,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8F61FF20EB811B009ED344 /* RequestTest.swift in Sources */,
 				4FDE6C0920EA05A70098EA55 /* ViewController.swift in Sources */,
 				4FDE6C0720EA05A70098EA55 /* AppDelegate.swift in Sources */,
+				4F00C02720EF64E20039B187 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,15 +609,18 @@
 			baseConfigurationReference = 8677411C9EE9C163932D8687 /* Pods-swift-reference.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NF59D2CW5;
 				INFOPLIST_FILE = "swift-reference/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taiyh.swift-reference";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -569,15 +631,18 @@
 			baseConfigurationReference = F59171EDC0C600009DBF4306 /* Pods-swift-reference.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NF59D2CW5;
 				INFOPLIST_FILE = "swift-reference/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taiyh.swift-reference";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
