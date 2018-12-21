@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0BA953162BBCF2EDC2949553 /* Pods_swift_reference.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FBE1DEF36D306781E355D5 /* Pods_swift_reference.framework */; };
 		4F00C02720EF64E20039B187 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00C02620EF64E20039B187 /* Logger.swift */; };
+		4F87201320F60B4600C02DAB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87201120F60B4600C02DAB /* WebViewController.swift */; };
+		4F87201420F60B4600C02DAB /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F87201220F60B4600C02DAB /* WebViewController.xib */; };
 		4F8F61FF20EB811B009ED344 /* RequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F61FE20EB811B009ED344 /* RequestTest.swift */; };
 		4FDE6C0720EA05A70098EA55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE6C0620EA05A70098EA55 /* AppDelegate.swift */; };
 		4FDE6C0920EA05A70098EA55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDE6C0820EA05A70098EA55 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 		0561D1D2B71D65FDB1AEECBC /* Pods_swift_referenceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_referenceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E494591931AFA9BD2CB9250 /* Pods-swift-referenceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-referenceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-referenceUITests/Pods-swift-referenceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4F00C02620EF64E20039B187 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		4F87201120F60B4600C02DAB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		4F87201220F60B4600C02DAB /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		4F8F61FE20EB811B009ED344 /* RequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTest.swift; sourceTree = "<group>"; };
 		4FDE6C0320EA05A70098EA55 /* swift-reference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-reference.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDE6C0620EA05A70098EA55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 		4F00C02420EF64C90039B187 /* References */ = {
 			isa = PBXGroup;
 			children = (
+				4F87201020F60B2900C02DAB /* WebView */,
 				4F00C02520EF64C90039B187 /* Logger */,
 			);
 			path = References;
@@ -107,6 +112,15 @@
 				4F00C02620EF64E20039B187 /* Logger.swift */,
 			);
 			path = Logger;
+			sourceTree = "<group>";
+		};
+		4F87201020F60B2900C02DAB /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				4F87201120F60B4600C02DAB /* WebViewController.swift */,
+				4F87201220F60B4600C02DAB /* WebViewController.xib */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		4FDE6BFA20EA05A70098EA55 = {
@@ -299,6 +313,7 @@
 				4FDE6C1120EA05AD0098EA55 /* LaunchScreen.storyboard in Resources */,
 				4FDE6C0E20EA05AD0098EA55 /* Assets.xcassets in Resources */,
 				4FDE6C0C20EA05A70098EA55 /* Main.storyboard in Resources */,
+				4F87201420F60B4600C02DAB /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +450,7 @@
 				4F8F61FF20EB811B009ED344 /* RequestTest.swift in Sources */,
 				4FDE6C0920EA05A70098EA55 /* ViewController.swift in Sources */,
 				4FDE6C0720EA05A70098EA55 /* AppDelegate.swift in Sources */,
+				4F87201320F60B4600C02DAB /* WebViewController.swift in Sources */,
 				4F00C02720EF64E20039B187 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
